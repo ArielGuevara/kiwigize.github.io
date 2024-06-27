@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/Logo KIwigize.png" alt="Logo KIwigize">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container login-main">
+        <section class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form action="/login" method="post">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="login-password" required pattern=".{8,}">
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-informacion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio aut, natus amet numquam ducimus. Earum, minus enim illum obcaecati quisquam unde esse magni, quaerat, tempora reprehenderit necessitatibus voluptate. Suscipit.</p>
+        </div>
+        <div class="footer-socials">
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/x.png" alt="X"></a>
+            <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

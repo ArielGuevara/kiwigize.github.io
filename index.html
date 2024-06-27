@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Recetas Ecuatorianas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">&#9776;</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/Logo KIwigize.png" alt="Logo KIwigize">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <input class="searcher" type="text" placeholder="Busca tus recetas favoritas...">
+                <li class="header__nav-item"><a href="index.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="recipes.html">Recetas</a></li>
+                <li class="header__nav-item"><a href="#foot">Contacto</a></li>
+                <li class="header__nav-item"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="header__nav-item"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="slide">
+            <img src="img/Logo principal.jpg" alt="Logo principal" class="imagen-responsive">
+        </section>
+        <section class="slide-recetas">
+            <!-- Contenido de slide-recetas -->
+        </section>
+        <section class="top-recetas">
+            <!-- Contenido de top-recetas -->
+        </section>
+        <section class="tips">
+            <h2>Consejos de Cocina</h2>
+            <p>Para lograr un auténtico sabor ecuatoriano, utiliza ingredientes frescos como plátano verde, yuca, maíz, mariscos y especias locales como achiote y cilantro.</p>
+            <p>El ají es un condimento fundamental en la cocina ecuatoriana. Puedes ajustar su nivel de picante según tu gusto, utilizando más o menos chiles.</p>
+        </section>
+        <section class="notas">
+            <h2>Descubre Más Recetas</h2>
+            <p>Visita nuestro <a href="recipes.html">blog de recetas ecuatorianas</a> para encontrar paso a paso cómo preparar platos tradicionales como el encebollado, la fanesca, el llapingacho y más.</p>
+        </section>
+        <section class="recetas-ecuatorianas">
+            <h2>Recetas Ecuatorianas</h2>
+            <div class="recetas-grid">
+                <div class="receta">
+                    <img src="img/Logo KIwigize.png" alt="Ceviche Ecuatoriano">
+                    <h3>Ceviche Ecuatoriano</h3>
+                    <p>El ceviche ecuatoriano es una deliciosa combinación de pescado fresco, cebolla, tomate, cilantro y jugo de limón, acompañado de plátano verde o chifles. Es una receta refrescante y llena de sabor, perfecta para disfrutar en días calurosos.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/Logo KIwigize.png" alt="Hornado">
+                    <h3>Hornado</h3>
+                    <p>El hornado es un plato típico de la sierra ecuatoriana. Consiste en carne de cerdo adobada y cocida lentamente en horno de leña hasta que queda tierna y jugosa. Se sirve tradicionalmente con mote, llapingachos (tortillas de papa) y ensalada.</p>
+                </div>
+                <!-- Añadir más recetas según sea necesario -->
+            </div>
+            <button onclick="location.href='recipes.html'" class="btn-ver-mas">Ver más recetas</button>
+        </section>
+    </main>
+    <footer class="footer-container" id="foot">
+        <div class="footer-informacion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio aut, natus amet numquam ducimus. Earum, minus enim illum obcaecati quisquam unde esse magni, quaerat, tempora reprehenderit necessitatibus voluptate. Suscipit.</p>
+        </div>
+        <div class="footer-socials">
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/x.png" alt="X"></a>
+            <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
