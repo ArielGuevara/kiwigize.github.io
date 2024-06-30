@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Recetas Ecuatorianas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">&#9776;</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/Logo KIwigize.png" alt="Logo KIwigize">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <input class="searcher" type="text" placeholder="Busca tus recetas favoritas...">
+                <li class="header__nav-item"><a href="index.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="recipes.html">Recetas</a></li>
+                <li class="header__nav-item"><a href="#">Contacto</a></li>
+                <li class="header__nav-item"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="header__nav-item"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="recetas-ecuatorianas">
+            <h2>Recetas Ecuatorianas</h2>
+            <div class="recetas-grid">
+                <div class="receta">
+                    <img src="img/ceviche-ecuatoriano.jpg" alt="Ceviche Ecuatoriano">
+                    <h3>Ceviche Ecuatoriano</h3>
+                    <p>El ceviche ecuatoriano es una deliciosa combinación de pescado fresco, cebolla, tomate, cilantro y jugo de limón, acompañado de plátano verde o chifles. Es una receta refrescante y llena de sabor, perfecta para disfrutar en días calurosos.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/hornado.jpg" alt="Hornado" width="274px" height="195px">
+                    <h3>Hornado</h3>
+                    <p>El hornado es un plato típico de la sierra ecuatoriana. Consiste en carne de cerdo adobada y cocida lentamente en horno de leña hasta que queda tierna y jugosa. Se sirve tradicionalmente con mote, llapingachos (tortillas de papa) y ensalada.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/guatita.jpg" alt="Guatita" width="274px" height="195px">
+                    <h3>Guatita</h3>
+                    <p>La guatita es un plato típico de Ecuador a base de mondongo – también conocido como librillo, estomago o panza de res/vacuno, callos, menudo, entre otros nombres -, se cocina el mondongo con papas en una rica salsa de mani o cacahuates.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/encebollado.jpg" alt="Encebollado" width="274px" height="195px">
+                    <h3>Encebollado</h3>
+                    <p>Esta sopa, a base de pescado, se mezcla con yuca y cebolla, lo que le da su sabor característico y su aroma irresistible. Se come en todo el país, generalmente en las mañanas. Recomendado incluso después de una noche de fiesta. Es considerado por muchos como un remedio para la resaca.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/empanada.jpg" alt="Empanada" width="274px" height="195px">
+                    <h3>Empanada de Verde</h3>
+                    <p>Las empanadas de verde son un platillo tradicional de la costa ecuatoriana, su principal ingrediente es la banana verde o más conocido como plátano. La preparación de este plato ha cambiado a través del tiempo, además de tener varios tipos de relleno como es la de queso, pollo y carne.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/encocado.jpg" alt="Encocado" width="274px" height="195px">
+                    <h3>Encocado de Cangrejo</h3>
+                    <p>El encocado es un plato  suculento de la  comida tradicional esmeraldeña preparado a base de leche de coco,  mariscos, pescado, crustáceos. También se puede preparar un encocado combinando todos estos mariscos y pescado a la vez.</p>
+                </div>
+                <!-- Añadir más recetas según sea necesario -->
+            </div>
+            <button onclick="location.href='recipes.html'" class="btn-ver-mas">Ver más recetas</button>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/Logo KIwigize.png" alt="Logo" class="footer-logo-img">
+                <p class="footer-logo-text">Kiwigize</p>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="#">Inicio</a></li>
+                    <li class="footer-nav-item"><a href="recipes.html">Recetas</a></li>
+                    <li class="footer-nav-item"><a href="#">Nosotros</a></li>
+                    <li class="footer-nav-item"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kiwigize. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</body>
+</html>
+
