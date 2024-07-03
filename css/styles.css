@@ -104,7 +104,7 @@ p{
 }
 
 .recetas-ecuatorianas {
-    padding: 20px 0;
+    padding: 20px 0px 0;
 }
 
 .recetas-grid {
@@ -126,6 +126,68 @@ p{
 .imagen-responsive:hover {
     transform: scale(1.05);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35), 0 12px 12px rgba(0, 0, 0, 0.22);
+}
+            /* Recipes.html */
+
+/* Menu Vertical */
+.menu-vertical{
+    position: fixed; /*Se mantenga estatico el menu vertical*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+    background-color: #4caf50;
+    overflow: hidden;
+    transition: width 0.4s;
+    z-index: 10;
+}
+
+.menu-vertical:hover{
+    width: 400px;
+}
+.menu-vertical .categorie-tittle{
+    color: #e6c140;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+    font-size: 18px;
+    
+}
+
+.vertical-categories{
+    transform: translate(-300px);
+    opacity: 0;
+    transition: transform 0.8s ease,opacy 0.2s ease;
+}
+
+
+.vertical-categories:hover{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.links-categorias-recetas a{
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    width: 400px;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.links-categorias-recetas a:hover{
+    background-color: #38773a;
+}
+
+.title{
+    padding: 5px;
+}
+
+.tittle-text{
+    height: 100%;
+    width: 100%;
 }
 
 .receta {
