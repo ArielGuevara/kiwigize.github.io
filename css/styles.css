@@ -143,7 +143,7 @@ p{
 }
 
 .menu-vertical:hover{
-    width: 400px;
+    width: 350px;
 }
 .menu-vertical .categorie-tittle{
     color: #e6c140;
@@ -157,15 +157,26 @@ p{
 .vertical-categories{
     transform: translate(-300px);
     opacity: 0;
-    transition: transform 0.8s ease,opacy 0.2s ease;
+    transition: transform 0.8s ease,opacy 0.8s ease;
 }
 
-
-.vertical-categories:hover{
+.menu-vertical:hover .vertical-categories {
     transform: translateX(0);
     opacity: 1;
 }
 
+.links-categorias-recetas{
+    transform: translate(-300px);
+    opacity: 0;
+    transition: transform 0.8s ease,opacy 0.8s ease;
+}
+
+
+
+.menu-vertical:hover .links-categorias-recetas{
+    transform: translateX(0);
+    opacity: 1;
+}
 
 .links-categorias-recetas a{
     display: flex;
