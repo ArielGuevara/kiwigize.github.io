@@ -541,6 +541,10 @@ p{
     cursor: pointer;
 }
 
+.leerMas:hover{
+    background-color: #92ff96;
+}
+
 .container .slide .item{
     width: 200px;
     height: 300px;
