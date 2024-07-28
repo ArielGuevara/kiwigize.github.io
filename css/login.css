@@ -21,10 +21,11 @@ body,input{
 .container::before{
     content: '';
     position: absolute;
-    width: 2000px;
-    height: 2000px;
+    width: 1900px;
+    height: 1900px;
     border-radius: 50%;
     background: linear-gradient(-45deg, #2e7d32, #4caf50);
+    border: 16px solid #dbbb02;
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
