@@ -651,6 +651,7 @@ p{
 }
 
 .button button{
+    background-color: #92ff96;
     width: 40px;
     height: 35px;
     border-radius: 8px;
@@ -662,6 +663,5 @@ p{
 }
 
 .button button:hover{
-    background: #ababab;
-    color:#fff
+    background-color: #2fc46d;
 }
