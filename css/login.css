@@ -29,6 +29,7 @@ body,input{
     right: 48%;
     transform: translateY(-50%);
     z-index: 6;
+    transition: 1.8s ease-in-out;
 }
 
 .forms-container{
@@ -219,4 +220,10 @@ form.signin-up-form{
 
 .right-panel .content, .right-panel .image{
     transform: translateX(800px); /*Mueve el panel de registrarse fuera de la pantalla*/
+}
+
+/*Animaciones*/
+.container.sign-up-mode::before{
+    transform: translate(100%,-50%);
+    right: 52%;
 }
