@@ -1,4 +1,7 @@
-// Galeria de index
+//  -------------------
+//  Galeria de index
+//  --------------------
+
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 
@@ -28,3 +31,9 @@ document.getElementById('leerMas4').onclick = function(){
 document.getElementById('leerMas5').onclick = function(){
     window.location.href = '../recipes.html';
 }
+//  -------------------
+//  New Register
+//  --------------------
+
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
