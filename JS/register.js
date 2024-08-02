@@ -13,3 +13,18 @@ sign_up_btn.addEventListener('click', ()=>{
 sign_in_btn.addEventListener('click', ()=>{
     container.classList.remove("sign-up-mode");
 });
+
+
+// boton Regresar
+
+// document.getElementById('regresar').onclick = function(){
+//     window.location.href = "recipes.html"
+// }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll("#regresar").forEach(button => {
+        button.addEventListener("click", function() {
+            window.location.href = "./index.html";
+        });
+    });
+});
