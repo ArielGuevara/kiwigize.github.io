@@ -27,7 +27,7 @@ p{
     padding: 15px 30px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,12 +47,19 @@ p{
     align-items: center;
 }
 
+/* .header__logo-container {
+    text-decoration: none;
+    background-color: #0f0f0f;
+} */
+
+
 .header__logo {
     max-height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: absolute; 
+    bottom: 10%;
 }
 
 .header__nav {
