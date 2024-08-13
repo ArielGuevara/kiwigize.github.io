@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Descubre recetas ecuatorianas auténticas, consejos de cocina y más en Recetas Ecuatorianas. Aprende a preparar ceviche, hornado y otros platos tradicionales.">
+    <meta name="keywords" content="recetas ecuatorianas, gastronomía, ceviche, hornado, cocina ecuatoriana">
+    <title>Kiwigize</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">&#9776;</label>
+        <div class="header__logo-container">
+            <a href="index.html"><img class="header__logo" src="img/Logo-Kiwigize.svg" alt="Logo KIwigize"></a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><input class="searcher" type="text" placeholder="Busca tus recetas favoritas..."></li>
+                <li class="header__nav-item"><a href="index.html">Inicio</a></li>
+                <li class="header__nav-item"><a href="recipes.html">Recetas</a></li>
+                <li class="header__nav-item"><a href="#foot">Contacto</a></li>
+                <li class="header__nav-item"><a href="newRegister.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <!-- <section class="slide">
+            <img src="img/Logo-Principal.svg" alt="Logo principal" class="imagen-responsive">
+        </section> -->
+        <!-- Galeria de Imagenes-->
+        <div class="galery-container">
+            <div class="galery">
+                <div class="container">
+                    <div class="slide">
+                        <!-- Imagen 1 -->
+                        <div class="item" style="background-image: url(./IMG/encocado.jpg);">
+                            <div class="content">
+                                <div class="name">Costa</div>
+                                <div class="des">El encocado es uno de los platos típicos de Ecuador, se hacen encocados de pollo, de pescado, de camarón o langostinos, de concha. Pero una de las recetas más deliciosas que se pueden hacer con encocados es el encocado de cangrejo..</div>
+                                <button id="leerMas1" class="leerMas" onclick="">Leer mas</button>
+                            </div>
+                        </div>
+                        <!-- Imagen 2 -->
+                        <div class="item" style="background-image: url(./IMG/hornado.jpg);">
+                            <div class="content">
+                                <div class="name">Sierra</div>
+                                <div class="des">Plato que contiene carne de cerdo horneada. Principalmente es cocinada en leña, acompañada de distintas salsas y vegetales cocidos, como por ejemplo choclo, llapingachos, plátano maduro frito, aguacate, lechuga, tomate y demás ingredientes dependiendo la zona geográfica donde se lo prepare.</div>
+                                <button id="leerMas2" class="leerMas" onclick="">Leer mas</button>
+                            </div>
+                        </div>
+                        <!-- Imagen 3 -->
+                        <div class="item" style="background-image: url(./IMG/encebollado.jpg);">
+                            <div class="content">
+                                <div class="name">Costa</div>
+                                <div class="des">El encebollado es un caldo de pescado que contiene albacora, yuca, tomate, cebolla colorada, cilantro, ají en polvo, comino y otras especias. Se acompaña con chifles, que se le añaden al momento de degustarlo. Es común que sea aderezado con gotas de limón verde y con ají.</div>
+                                <button id="leerMas3" class="leerMas" onclick="">Leer mas</button>
+                            </div>
+                        </div>
+                        <!-- Imagen 4 -->
+                        <div class="item" style="background-image: url(./IMG/Maito-oriente.jpg);">
+                            <div class="content">
+                                <div class="name">Oriente</div>
+                                <div class="des">consiste en un preparado de diferentes ingredientes, que pueden ser pescado, palmito, plátano verde y yuca, envueltos en una hoja de bijao o kwan panga.</div>
+                                <button id="leerMas4" class="leerMas" onclick="">Leer mas</button>
+                            </div>
+                        </div>
+                        <!-- Imagen 5 -->
+                        <div class="item" style="background-image: url(./IMG/guatita.jpg);">
+                            <div class="content">
+                                <div class="name">Costa</div>
+                                <div class="des">La Guatita o Mondongo de res es uno de los platos emblemáticos de la cocina ecuatoriana. Básicamente es un estofado de panza de res aderezado con papas y salsa de maní.</div>
+                                <button id="leerMas5" class="leerMas" onclick="">Leer mas</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="button">
+                        <button class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+                        <button class="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="slide-recetas">
+            <!-- Contenido de slide-recetas -->
+        </section>
+        <section class="top-recetas">
+            <!-- Contenido de top-recetas -->
+        </section>
+        <section class="tips">
+            <h2>Consejos de Cocina</h2>
+            <p>Para lograr un auténtico sabor ecuatoriano, utiliza ingredientes frescos como plátano verde, yuca, maíz, mariscos y especias locales como achiote y cilantro.</p>
+            <p>El ají es un condimento fundamental en la cocina ecuatoriana. Puedes ajustar su nivel de picante según tu gusto, utilizando más o menos chiles.</p>
+        </section>
+        <section class="notas">
+            <h2>Descubre Más Recetas</h2>
+            <p>Visita nuestro <a href="recipes.html">blog de recetas ecuatorianas</a> para encontrar paso a paso cómo preparar platos tradicionales como el encebollado, la fanesca, el llapingacho y más.</p>
+        </section>
+        <section class="recetas-ecuatorianas">
+            <h2>Recetas Ecuatorianas</h2>
+            <div class="recetas-grid">
+                <div class="receta">
+                    <img src="img/ceviche-ecuatoriano.jpg" alt="Ceviche Ecuatoriano">
+                    <h3>Ceviche Ecuatoriano</h3>
+                    <p>El ceviche ecuatoriano es una deliciosa combinación de pescado fresco, cebolla, tomate, cilantro y jugo de limón, acompañado de plátano verde o chifles. Es una receta refrescante y llena de sabor, perfecta para disfrutar en días calurosos.</p>
+                </div>
+                <div class="receta">
+                    <img src="img/hornado.jpg" alt="Hornado" width="274px" height="195px">
+                    <h3>Hornado</h3>
+                    <p>El hornado es un plato típico de la sierra ecuatoriana. Consiste en carne de cerdo adobada y cocida lentamente en horno de leña hasta que queda tierna y jugosa. Se sirve tradicionalmente con mote, llapingachos (tortillas de papa) y ensalada.</p>
+                </div>
+                <!-- Añadir más recetas según sea necesario -->
+            </div>
+            <button onclick="location.href='recipes.html'" class="btn-ver-mas">Ver más recetas</button>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/Logo KIwigize.png" alt="Logo" class="footer-logo-img">
+                <p class="footer-logo-text">Kiwigize</p>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="#">Inicio</a></li>
+                    <li class="footer-nav-item"><a href="recipes.html">Recetas</a></li>
+                    <li class="footer-nav-item"><a href="#">Nosotros</a></li>
+                    <li class="footer-nav-item"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kiwigize. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./JS/funciones.js"></script>
+</body>
+</html>
+
