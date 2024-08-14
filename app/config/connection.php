@@ -13,11 +13,11 @@ class Connection{
             $connection = new Connection();
             $connection->connect = new PDO("{$connection->driver}:host={$connection->host};port={$connection->port};dbname={$connection->dbname}", $connection->user, $connection->password);
             $connection->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            //return $connection->connect;
-            echo "connection Succes :)";
+            return $connection->connect;
+            //echo "connection Succes :)";
         }catch(PDOException $e){
             echo "Error: " . $e->getMessage();
         }
     }
 }
-Connection::getConnection();
+//Connection::getConnection();
