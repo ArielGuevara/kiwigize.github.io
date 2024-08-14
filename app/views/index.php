@@ -77,6 +77,7 @@
       </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
+     <script src="../assets/code.js"></script>
     <script src="../assets/code.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
