@@ -17,8 +17,8 @@ const app = new (function(){
                 <td>${row.email}</td>
                 <td>${row.contrasenia}</td>
                 <td>
-                    <a href="editar.php?id=${row.id}" class="btn btn-warning">Editar</a>
-                    <a href="eliminar.php?id=${row.id}" class="btn btn-danger">Eliminar</a>
+                    <a href="javascript:;" onclick="app.editar(${row.id})" class="btn btn-warning">Editar</a>
+                    <a href="javascript:;" onclick="app.eliminar(${row.id})" class="btn btn-danger">Eliminar</a>
                 </td>
                 `;
                 this.tbody.appendChild(tr);
@@ -44,6 +44,22 @@ const app = new (function(){
         })
         .catch((error)=>console.log(error));
     }
+
+    this.eliminar = (id)=>{
+        var form = new FormData();
+        form.append("id", id);
+        fetch("../controllers/eliminar.php",{
+            method: "POST",
+            body: form,
+        })
+            .then((res)=>res.json())
+            .then((data)=>{
+                alert("Eliminado correctamente");
+                this.listado();
+            })
+            .catch((error)=>console.log(error));  
+    }
+
     this.limpiar = ()=>{
         this.id.value = "";
         this.nombre.value = "";
@@ -51,7 +67,4 @@ const app = new (function(){
         this.contrasenia.value = "";
     }
 })();
-app.listado();//prueba de commit
-
-
-//nuevo intento de commit
+app.listado();

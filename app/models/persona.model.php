@@ -52,7 +52,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            //echo $th->getMessage();
+            echo $th->getMessage();
         }
     }
 
@@ -64,7 +64,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            //echo $th->getMessage();
+            echo $th->getMessage();
         }
     }
 }
