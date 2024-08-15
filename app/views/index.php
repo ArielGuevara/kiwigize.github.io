@@ -25,11 +25,11 @@
           <hr />
           <form action="javascript:void(0);" onsubmit="app.guardar()">
             <input type="hidden" id="id" />
-            <label for="nombres">Nombres</label>
+            <label for="nombre">Nombres</label>
             <input
               type="text"
               class="form-control"
-              id="nombres"
+              id="nombre"
               placeholder="Nombres Apellidos"
               autofocus
               required
@@ -42,17 +42,15 @@
               placeholder="email@email.com"
               required
             />
-            <label for="email">Edad</label>
+            <br />
+            <label for="contrasenia">Contraseña</label>
             <input
-              type="number"
+              type="text"
               class="form-control"
-              id="edad"
-              placeholder="18"
-              min="18"
-              max="99"
+              id="contrasenia"
+              placeholder="adsfasdf154"
               required
             />
-            <br />
             <div>
               <button type="submit" class="btn btn-primary">Guardar</button>
               <button type="reset" class="btn btn-danger">Cancelar</button>
@@ -67,7 +65,7 @@
                 <th>#</th>
                 <th>Nombres</th>
                 <th>Email</th>
-                <th>Edad</th>
+                <th>Contraseña</th>
                 <th>Opciones</th>
               </tr>
             </thead>
@@ -77,7 +75,6 @@
       </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
-     <script src="../assets/code.js"></script>
     <script src="../assets/code.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

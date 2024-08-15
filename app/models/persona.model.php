@@ -1,5 +1,5 @@
 <?php
-require_once "./app/config/connection.php";
+require_once "../config/connection.php";
 class Persona extends Connection{
     public static function mostrarDatos(){
         try{
@@ -7,21 +7,23 @@ class Persona extends Connection{
             $stmt = Connection::getConnection()->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetchAll();
+            //var_dump($result);
             return $result;
         }catch(PDOException $th){
-            echo $th->getMessage();
+            //echo $th->getMessage();
+            return ['error en mostrar datos' => $th->getMessage()];
         }
     }
     public static function obtenerDatosId($id){
         try{
             $sql = "SELECT * FROM persona WHERE id = :id";
             $stmt = Connection::getConnection()->prepare($sql);
-            $stmt->bindParam(":id", $id);
+            $stmt->bindParam(':id', $id);
             $stmt->execute();
             $result = $stmt->fetch();
             return $result;
         }catch(PDOException $th){
-            echo $th->getMessage(); 
+            //echo $th->getMessage(); 
         } 
     }
 
@@ -35,7 +37,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            echo $th->getMessage();
+            //echo $th->getMessage();
         }
     }
 
@@ -50,7 +52,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            echo $th->getMessage();
+            //echo $th->getMessage();
         }
     }
 
@@ -62,7 +64,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            echo $th->getMessage();
+            //echo $th->getMessage();
         }
     }
 }
