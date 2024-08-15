@@ -1,5 +1,9 @@
 const app = new (function(){
     this.tbody = document.getElementById("tbody");
+    this.id = document.getElementById("id");
+    this.nombre = document.getElementById("nombre");
+    this.email = document.getElementById("email");
+    this.contrasenia = document.getElementById("contrasenia");
     this.listado = ()=>{
         fetch("../controllers/listado.php")
         .then((res)=>res.json())
@@ -13,7 +17,7 @@ const app = new (function(){
                 <td>${row.email}</td>
                 <td>${row.contrasenia}</td>
                 <td>
-                    <a href="editar.php?id=${row.id}" class="btn btn-primary">Editar</a>
+                    <a href="editar.php?id=${row.id}" class="btn btn-warning">Editar</a>
                     <a href="eliminar.php?id=${row.id}" class="btn btn-danger">Eliminar</a>
                 </td>
                 `;
@@ -22,6 +26,29 @@ const app = new (function(){
         })
 
         .catch((error)=>console.log(error));
+    }
+    this.guardar = ()=>{
+        var form = new FormData();
+        form.append("nombre", this.nombre.value);
+        form.append("email", this.email.value);
+        form.append("contrasenia", this.contrasenia.value);
+        fetch("../controllers/guardar.php",{
+            method: "POST",
+            body: form
+        })
+        .then((res)=>res.json())
+        .then((data)=>{
+            alert("Creado correctamente");
+            this.listado();
+            this.limpiar();
+        })
+        .catch((error)=>console.log(error));
+    }
+    this.limpiar = ()=>{
+        this.id.value = "";
+        this.nombre.value = "";
+        this.email.value = "";
+        this.contrasenia.value = "";
     }
 })();
 app.listado();
