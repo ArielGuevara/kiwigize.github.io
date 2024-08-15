@@ -51,4 +51,4 @@ const app = new (function(){
         this.contrasenia.value = "";
     }
 })();
-app.listado();
+app.listado();//lamar a la app
