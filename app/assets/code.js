@@ -1,3 +1,4 @@
+// Autor: Ariel Guevara
 const app = new (function(){
     this.tbody = document.getElementById("tbody");
     this.id = document.getElementById("id");
@@ -32,15 +33,47 @@ const app = new (function(){
         form.append("nombre", this.nombre.value);
         form.append("email", this.email.value);
         form.append("contrasenia", this.contrasenia.value);
-        fetch("../controllers/guardar.php",{
+        form.append("id", this.id.value);
+        if(this.id.value === ""){
+            fetch("../controllers/guardar.php",{
+                method: "POST",
+                body: form,
+            })
+            .then((res)=>res.json())
+            .then((data)=>{
+                alert("Creado correctamente");
+                this.listado();
+                this.limpiar();
+            })
+            .catch((error)=>console.log(error));
+        }else{
+            fetch("../controllers/actualizar.php",{
+                method: "POST",
+                body: form,
+            })
+            .then((res)=>res.json())
+            .then((data)=>{
+                alert("Actualizado correctamente");
+                this.listado();
+                this.limpiar();
+            })
+            .catch((error)=>console.log(error));
+        }
+    }
+
+    this.editar = (id)=>{
+        var form = new FormData();
+        form.append("id", id);
+        fetch("../controllers/editar.php?",{
             method: "POST",
-            body: form
+            body: form,
         })
         .then((res)=>res.json())
         .then((data)=>{
-            alert("Creado correctamente");
-            this.listado();
-            this.limpiar();
+            this.id.value = data.id;
+            this.nombre.value = data.nombre;
+            this.email.value = data.email;
+            this.contrasenia.value = data.contrasenia;
         })
         .catch((error)=>console.log(error));
     }
