@@ -6,4 +6,4 @@ $arrayName = array(
     'contrasenia' => $_POST['contrasenia']
 );
 
-echo json_encode(Persona::guardarDatos($arrayName));
+echo json_encode(Persona::guardarDatos($arrayName));//prueba de commmit
