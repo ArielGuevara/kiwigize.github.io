@@ -33,14 +33,79 @@ document.addEventListener('DOMContentLoaded', (event) => {
 /******************************** */
 
 //crud
-const app = new (function(){
-    this.tbody = document.getElementById("tbody");
-    this.listado = ()=>{
-        fetch('../controllers/listado.php')
-        .then((res)=>res.json())
-        .then((data)=>{
-            console.log(data);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const registrarseButton = document.getElementById("registrarse");
+
+    registrarseButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+
+        const pass = document.getElementById("contrasenia").value;
+        const pass2 = document.getElementById("contrasenia2").value;
+        if(pass != pass2){
+            alert("Las contraseñas no coinciden");
+            return;
+        }else{
+            this.id = document.getElementById("id");
+            this.nombre = document.getElementById("nombre");
+            this.email = document.getElementById("email");
+            this.contrasenia = document.getElementById("contrasenia");
+        
+            var form = new FormData();
+            form.append("nombre", this.nombre.value);
+            form.append("email", this.email.value);
+            form.append("contrasenia", this.contrasenia.value);
+            form.append("id", this.id.value);
+
+            fetch("../app/controllers/guardar.php",{
+                method: "POST",
+                body: form,
+            })
+            .then((res)=>res.json())
+            .then((data)=>{
+                console.log(data);
+                alert("Creado correctamente");
+            })
+            .catch((error)=>console.log(error));
+        }
+        
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const registrarseButton = document.getElementById("iniciar");
+    let bandera = false;
+    registrarseButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+
+        const user = document.getElementById("user").value;
+        const password = document.getElementById("password").value;
+        
+
+        
+        this.email = document.getElementById("user");
+        this.contrasenia = document.getElementById("password");
+
+        var form = new FormData();
+        form.append("user", this.email.value);
+        form.append("password", this.contrasenia.value);
+        fetch("../app/controllers/capturar.php",{
+            method: "POST",
+            body: form,
         })
-        .catch((error)=>console.log(error));
-    }
-})();
+            .then((res)=>res.json())
+            .then((data)=>{
+                //validacion de usuario
+                if(data == false){
+                    alert("Usuario o contraseña incorrectos");
+                    
+                }else{
+                    window.location.href = "./index.html";
+                }
+            })
+            .catch((error)=>console.log(error)); 
+
+            
+    });  
+});
