@@ -17,13 +17,13 @@
                     <h2 class="title">Iniciar Sesion</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Nombre de usuario">
+                        <input type="text" id="user" placeholder="Nombre de usuario">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" id="password" placeholder="Contraseña">
                     </div>
-                    <input type="submit" value="Iniciar Sesion" class="btn solid">
+                    <input type="submit" value="Iniciar Sesion" id="iniciar" class="btn solid">
                     <button type="button" class="btn solid" onclick="" id="regresar">Regresar</button>
 
                     <p class="social-text">O inicia sesion con una red Social</p>
@@ -43,26 +43,27 @@
                     </div>
                 </form>
 
-                <form action="" class="signin-up-form">
+                <form action="" class="signin-up-form" >
                     <h2 class="title">Registro</h2>
+                    <input type="hidden" id="id" />
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Nombre de usuario">
+                        <input type="text" id="nombre" placeholder="Nombre de usuario">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="text" placeholder="Email">
+                        <input type="text" id="email" placeholder="Email">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" id="contrasenia" placeholder="Contraseña">
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Confirmar Contraseña">
+                        <input type="password" id="contrasenia2" placeholder="Confirmar Contraseña">
                     </div>
-                    <input type="submit" value="Registrarse" class="btn solid">
+                    <input type="submit" value="Registrarse" id="registrarse" class="btn solid">
                     <button type="button" class="btn solid" onclick="" id="regresar">Regresar</button>
 
                     <p class="social-text">O Registra con una red Social</p>

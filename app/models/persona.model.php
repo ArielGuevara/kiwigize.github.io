@@ -23,7 +23,21 @@ class Persona extends Connection{
             $result = $stmt->fetch();
             return $result;
         }catch(PDOException $th){
-            //echo $th->getMessage(); 
+            echo $th->getMessage(); 
+        } 
+    }
+
+    public static function obtenerDatosUsers($email, $contrasenia){
+        try{
+            $sql = "SELECT * FROM persona WHERE email = :email AND contrasenia = :contrasenia";
+            $stmt = Connection::getConnection()->prepare($sql);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':contrasenia', $contrasenia);
+            $stmt->execute();
+            $result = $stmt->fetch();
+            return $result;
+        }catch(PDOException $th){
+            echo $th->getMessage(); 
         } 
     }
 
@@ -37,7 +51,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            //echo $th->getMessage();
+            echo $th->getMessage();
         }
     }
 
@@ -52,7 +66,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            //echo $th->getMessage();
+            echo $th->getMessage();
         }
     }
 
@@ -64,7 +78,7 @@ class Persona extends Connection{
             $stmt->execute();
             return true;
         }catch(PDOException $th){
-            //echo $th->getMessage();
+            echo $th->getMessage();
         }
     }
 }
