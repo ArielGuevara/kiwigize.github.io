@@ -43,6 +43,39 @@ const app = new (function(){
             this.limpiar();
         })
         .catch((error)=>console.log(error));
+    };
+    this.eliminar = (id)=>{
+        var form = new FormData();
+        form.append("id", id);
+        fetch("../controllers/eliminar.php",{
+            method: "POST",
+            body: form,
+        })
+        .then((res)=> res.json())
+        .then((data)=> {
+            alert("eliminado con exito");
+            this.listado();
+        })
+        .catch((error)=> console.log(error));
+    };
+    this.editar = (id)=>{
+        var form = new FormData();
+        form.append("id", id);
+        fetch("../controllers/editar.php",{
+            method: "POST",
+            body: form,
+        })
+        .then((res)=>res.json())
+        .then((data)=>{
+            //alert("Creado correctamente");
+            this.listado();
+            this.limpiar();
+            this.id.value = data.id;
+            this.nombre.value = data.nombre;
+            this.email.value = data.email;
+            this.contrasenia.value = data.contrasenia;
+        })
+        .catch((error)=>console.log(error));
     }
     this.limpiar = ()=>{
         this.id.value = "";
