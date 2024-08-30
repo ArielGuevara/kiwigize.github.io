@@ -170,9 +170,9 @@
             <p>&copy; 2024 Kiwigize. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="./JS/funciones.js"></script>
+    <script src="./"></script>
     
-    
+
 </body>
 </html>
 
