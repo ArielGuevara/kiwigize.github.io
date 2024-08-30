@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     alert("Usuario o contraseña incorrectos");
                     
                 }else{
-                    window.location.href = "./indexLogeado.php";
+                    window.location.href = "./index.html";
                 }
             })
             .catch((error)=>console.log(error)); 
