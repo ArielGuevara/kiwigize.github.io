@@ -32,17 +32,32 @@ const app = new (function(){
         form.append("nombre", this.nombre.value);
         form.append("email", this.email.value);
         form.append("contrasenia", this.contrasenia.value);
-        fetch("../controllers/guardar.php",{
-            method: "POST",
-            body: form
-        })
-        .then((res)=>res.json())
-        .then((data)=>{
-            alert("Creado correctamente");
-            this.listado();
-            this.limpiar();
-        })
-        .catch((error)=>console.log(error));
+        form.append("id", this.id.value);
+        if(this.id.value === ""){
+            fetch("../controllers/guardar.php",{
+                method: "POST",
+                body: form,
+            })
+            .then((res)=>res.json())
+            .then((data)=>{
+                alert("Creado correctamente");
+                this.listado();
+                this.limpiar();
+            })
+            .catch((error)=>console.log(error));
+        }else{
+            fetch("../controllers/actualizar.php",{
+                method: "POST",
+                body: form,
+            })
+            .then((res)=>res.json())
+            .then((data)=>{
+                alert("Actualizado correctamente");
+                this.listado();
+                this.limpiar();
+            })
+            .catch((error)=>console.log(error));
+        }
     };
     this.eliminar = (id)=>{
         var form = new FormData();

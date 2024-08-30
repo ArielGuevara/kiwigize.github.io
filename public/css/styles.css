@@ -113,6 +113,48 @@ p{
     transform: scale(1.1);
 }
 
+/*nav menu usuario desplegable*/
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+/**/
 .searcher {
     margin-right: 15px;
     padding: 7px;
@@ -162,6 +204,52 @@ p{
     transform: scale(1.05);
     box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35), 0 12px 12px rgba(0, 0, 0, 0.22);
 }
+    /*perfil.html*/
+
+    .body-perfil{
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .profile-container {
+        background-color: #ffffff;
+        border: 2px solid #27ae60;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile-icon img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #27ae60;
+    }
+    
+    .profile-name {
+        color: #27ae60;
+        margin: 15px 0 10px;
+    }
+    
+    .profile-description {
+        color: #333333;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .profile-container:hover {
+        border-color: #e6c140;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+
             /* Recipes.html */
 
 /* Menu Vertical */

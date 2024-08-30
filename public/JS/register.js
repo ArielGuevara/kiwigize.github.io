@@ -79,10 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
     registrarseButton.addEventListener("click", function(event) {
         event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
 
-        const user = document.getElementById("user").value;
-        const password = document.getElementById("password").value;
-        
-
         
         this.email = document.getElementById("user");
         this.contrasenia = document.getElementById("password");
@@ -101,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     alert("Usuario o contraseña incorrectos");
                     
                 }else{
-                    window.location.href = "./index.html";
+                    window.location.href = "./indexLogeado.php";
                 }
             })
             .catch((error)=>console.log(error)); 
