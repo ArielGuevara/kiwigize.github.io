@@ -8,11 +8,35 @@ body {
 }
 
 h2{
-    font-family: Espress;
+    font-family: 'Espress', sans-serif;
+    color: #2e7d32; /* Color verde del tema */
 }
 
 p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: #555; /* Color de texto más suave */
+}
+
+.blog-recetas-a{
+    color: #2e7d32; 
+    font-weight: bold; 
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    padding-bottom: 2px; /* Espaciado entre el texto y la línea */
+    transition: color 0.3s, border-color 0.3s; /* Transición suave en hover */
+}
+
+.blog-recetas-a:hover {
+    color: #ffd700; 
+    border-bottom-color: #ffd700; /* Cambia el color de la línea en hover */
+    border-bottom: 2px solid #ffd700; /* Agrega una línea inferior para resaltar */
+}
+
+.footer-logo-text{
+    color: #fff;
+}
+
+.footer-bottom > p{
+    color: #fff;
 }
 
 /* Header */
